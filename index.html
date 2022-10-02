@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/0acb75a9e8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0acb75a9e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="myTopnav" class="topnav">
-            <span>Christophe Vallot</span>
-            <a href="#profil" class="active">Accueil</a>
-            <a href="#edito">À propos</a>
-            <a href="#projets">Projets</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </nav> 
+      <nav id="myTopnav" class="topnav">
+        <span>Christophe Vallot</span>
+        <a href="#profil" class="active">Accueil</a>
+        <a href="#edito">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toogleResponsive()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
     </header>
     <main>
-        <section id ="profil"></section>
-        <section id="edito"></section>
-        <section id="projets"></section>
-        <section id="contact"></section>
+      <section id="profil">
+        <div id="photo"></div>
+      </section>
+      <section id="edito" class="slideshow-container">
+        <!-- Le diaporama -->
+        <div class="mySlides fade">
+          <img src="images/img1.jpg" />
+          <div class="text">légende de l'image 1</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img2.jpg" />
+          <div class="text">légende de l'image 1</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img3.jpg" />
+          <div class="text">légende de l'image 1</div>
+        </div>
+
+        <!-- flèches de navigation  -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- les points de navigation -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <section id="projets"></section>
+      <section id="contact"></section>
     </main>
-    <footer></footer> 
-    <script src="js/script.js"></script> 
-</body>
+    <footer></footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
