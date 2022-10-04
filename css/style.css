@@ -64,6 +64,7 @@ footer {
 }
 
 #photo {
+  display:block;
   margin: auto;
   width: 200px;
   height: 200px;
@@ -204,13 +205,13 @@ img {
 
 /* Style the front side */
 .flip-box-front {
-  background-color: #bbb;
+  background-color: rgb(223, 230, 187);
   color: black;
 }
 
 /* Style the back side */
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: rgb(124, 199, 159);
   color: white;
   transform: rotateX(180deg);
 }
