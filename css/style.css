@@ -18,7 +18,7 @@
 .topnav a,
 .topnav span {
   padding: 14px 16px;
-  color:white;
+  color: white;
 }
 
 .topnav span {
@@ -71,11 +71,6 @@ footer {
   border-radius: 50%;
   border: 2px solid #483d8b;
   background-color: white;
-}
-
-#projets {
-  max-width:1620px;
-  margin: auto;
 }
 
 /* ______________________________ Slideshow ________________________________*/
@@ -168,6 +163,8 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
+  max-width: 1620px;
+  margin: auto;
 }
 
 .flip-box {
@@ -175,7 +172,7 @@ img {
   width: 30%;
   height: 300px;
   perspective: 1000px; /* Pour l'effet 3D */
-  margin: 10px;
+  margin: 16px;
 }
 
 .flip-box-inner {
@@ -349,7 +346,7 @@ footer {
   }
 
   .flip-box {
-    width: 90%;
+    width: 94%;
   }
 
   .topnav.responsive {
@@ -373,5 +370,11 @@ footer {
   #arrow-up {
     left: 85%;
     bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .flip-box {
+    width: 45%;
   }
 }
