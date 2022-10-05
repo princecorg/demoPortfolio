@@ -18,13 +18,13 @@
 .topnav a,
 .topnav span {
   padding: 14px 16px;
+  color:white;
 }
 
 .topnav span {
   margin-right: 60%;
 }
 .topnav a {
-  float: left;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -33,7 +33,7 @@
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #483d8b;
 }
 
 .topnav a.active {
@@ -71,6 +71,11 @@ footer {
   border-radius: 50%;
   border: 2px solid #483d8b;
   background-color: white;
+}
+
+#projets {
+  max-width:1620px;
+  margin: auto;
 }
 
 /* ______________________________ Slideshow ________________________________*/
