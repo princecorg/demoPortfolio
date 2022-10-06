@@ -22,7 +22,7 @@
 }
 
 .topnav span {
-  margin-right: 60%;
+  margin-right: 70%;
 }
 .topnav a {
   display: block;
@@ -170,7 +170,7 @@ img {
 .flip-box {
   background-color: transparent;
   width: 30%;
-  height: 300px;
+  min-height: 300px;
   perspective: 1000px; /* Pour l'effet 3D */
   margin: 16px;
 }
@@ -329,7 +329,7 @@ footer {
 
 /* ___________________________ Media Queries ______________________________*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav {
     display: block;
   }
@@ -347,6 +347,8 @@ footer {
 
   .flip-box {
     width: 94%;
+    justify-content:center; 
+
   }
 
   .topnav.responsive {
@@ -373,8 +375,25 @@ footer {
   }
 }
 
+@media screen and (min-width: 540px) and (max-width: 768px) {
+  .flip-box {
+    width: 468px;
+    margin:20px auto; 
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .flip-box {
     width: 45%;
+  }
+  .topnav span {
+    margin-right: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1850px) {
+  
+  .topnav span {
+    margin-right: 50%;
   }
 }
