@@ -37,7 +37,7 @@
       <section id="edito" class="slideshow-container">
         <!-- Le diaporama -->
         <div class="mySlides fade">
-          <img src="images/img1.jpg" alt="image 1 du diaporma"/>
+          <img src="images/img1.jpg" alt="image 1 du diaporma" />
           <div class="text">légende de l'image 1</div>
         </div>
 
@@ -124,9 +124,50 @@
           </div>
         </div>
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <table>
+          <tr>
+            <td><label for="firstname">Prénom :</label></td>
+            <td>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Votre prénom"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastname">Nom :</label></td>
+            <td>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="votre nom"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="message">Votre message :</label></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" value="Envoyer" /></td>
+          </tr>
+        </table>
+      </section>
     </main>
-    
+
     <footer>
       <a href="https://www.facebook.com/" target="_blank"
         ><i class="fa-brands fa-facebook fa-5x"></i
@@ -138,7 +179,9 @@
         ><i class="fa-brands fa-linkedin fa-5x"></i
       ></a>
     </footer>
-    <div id="arrow-up"><a href="#"><i class="fa-sharp fa-solid fa-arrow-up fa-3x"></i></a></div>
+    <div id="arrow-up">
+      <a href="#"><i class="fa-sharp fa-solid fa-arrow-up fa-3x"></i></a>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -5,6 +5,47 @@
   font-family: 'Roboto', sans-serif;
 }
 
+table {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background: #483d8b;
+  border: 2px solid white;
+
+}
+td {
+  width: 50%;
+  padding: 5px;
+  margin : 5px;
+  line-height: 1.5em;
+}
+
+tr:last-child{
+  text-align:center;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 3em;
+}
+
+input[type='button'] {
+  width: 250px;
+  margin: auto;
+  color: white;
+  border: 2px solid white;
+  background:green;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 /* ___________________________ Menu responsive ____________________________*/
 .topnav {
   display: flex;
@@ -347,8 +388,7 @@ footer {
 
   .flip-box {
     width: 94%;
-    justify-content:center; 
-
+    justify-content: center;
   }
 
   .topnav.responsive {
@@ -378,7 +418,7 @@ footer {
 @media screen and (min-width: 540px) and (max-width: 768px) {
   .flip-box {
     width: 468px;
-    margin:20px auto; 
+    margin: 20px auto;
   }
 }
 
@@ -392,7 +432,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1850px) {
-  
   .topnav span {
     margin-right: 50%;
   }
