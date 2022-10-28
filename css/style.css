@@ -426,6 +426,11 @@ footer {
     left: 85%;
     bottom: 15px;
   }
+
+  td {
+    display: block;
+    width: 96%;
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 768px) {
