@@ -13,17 +13,23 @@ table {
   color: white;
   background: #483d8b;
   border: 2px solid white;
-
 }
+/* td:first-child{
+  width: 30%;
+}
+
+td:last-child{
+  width: 70%;
+} */
 td {
   width: 50%;
   padding: 5px;
-  margin : 5px;
+  margin: 5px;
   line-height: 1.5em;
 }
 
-tr:last-child{
-  text-align:center;
+tr:last-child {
+  text-align: center;
 }
 
 textarea {
@@ -41,9 +47,15 @@ input[type='button'] {
   margin: auto;
   color: white;
   border: 2px solid white;
-  background:green;
+  background: green;
   border-radius: 5px;
   padding: 10px;
+}
+
+input[type='button']:hover {
+  cursor: pointer;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 /* ___________________________ Menu responsive ____________________________*/
