@@ -44,12 +44,15 @@ function showSlides(n) {
 }
 
 function controleForm() {
-  if (document.getElementById("rgpd").checked == false) {
+  if (document.getElementById("rgpd").checked === false) {
+    document.getElementById("gdpr").style.color = "red";
     alert(
       "Vous devez donner votre consentement avant de soumettre le formulaire"
     );
   } else {
+    document.getElementById("gdpr").style.color = "white";
     alert("Le formulaire a bien été envoyé");
+
     submit();
   }
 }
