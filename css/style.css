@@ -2,7 +2,7 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 table {
@@ -42,7 +42,7 @@ input {
   height: 3em;
 }
 
-input[type='button'] {
+input[type="button"] {
   width: 250px;
   margin: auto;
   color: white;
@@ -52,7 +52,7 @@ input[type='button'] {
   padding: 10px;
 }
 
-input[type='button']:hover {
+input[type="button"]:hover {
   cursor: pointer;
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
@@ -114,7 +114,7 @@ footer {
 #profil,
 #contact {
   background-color: lightgrey;
-  text-align:center;
+  text-align: center;
 }
 
 #photo {
@@ -262,7 +262,7 @@ img {
 
 /* Style du verso */
 .flip-box-back {
-  background-color: rgb(124, 199, 159);
+  background-color: #185d36;
   color: white;
   transform: rotateX(180deg);
 }
