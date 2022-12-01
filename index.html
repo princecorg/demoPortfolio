@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Petit portfolio visant l'acquisition des bases de HTML et CSS.">
+    <meta
+      name="description"
+      content="Petit portfolio visant l'acquisition des bases de HTML et CSS."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/0acb75a9e8.js"
@@ -26,14 +29,19 @@
         <a href="#edito">À propos</a>
         <a href="#projets">Projets</a>
         <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="toogleResponsive()" aria-label="menu burger">
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="toogleResponsive()"
+          aria-label="menu burger"
+        >
           <em class="fa fa-bars"></em>
         </a>
       </nav>
     </header>
     <main>
       <section id="profil">
-        <img id="photo" src="images/moi.png" alt="mon avatar" />
+        <img id="photo" src="images/avatar.png" alt="mon avatar" />
       </section>
       <section id="edito" class="slideshow-container">
         <!-- Le diaporama -->
@@ -187,7 +195,21 @@
               </td>
             </tr>
             <tr>
-              <td colspan="2"><input type="button"  onclick="submit()" value="Envoyer" /></td>
+              <td colspan="2">
+                <input
+                  type="checkbox"
+                  id="rgpd"
+                  name="rgpd"
+                  value="consentement RGPD"
+                />
+                En cochant cette case, je reconnais avoir pris connaissance de
+                la politique de confidentialité du site.
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="button" onclick="controleForm()" value="Envoyer" />
+              </td>
             </tr>
           </table>
         </form>
@@ -195,18 +217,29 @@
     </main>
 
     <footer>
-      <a href="https://www.facebook.com/" target="_blank"
-      aria-label="icône facebook"><em class="fa-brands fa-facebook fa-5x"></em
+      <a
+        href="https://www.facebook.com/"
+        target="_blank"
+        aria-label="icône facebook"
+        ><em class="fa-brands fa-facebook fa-5x"></em
       ></a>
-      <a href="https://www.twitter.com/" target="_blank"
-      aria-label="icône twitter" ><em class="fa-brands fa-twitter fa-5x"></em
+      <a
+        href="https://www.twitter.com/"
+        target="_blank"
+        aria-label="icône twitter"
+        ><em class="fa-brands fa-twitter fa-5x"></em
       ></a>
-      <a href="https://www.linkedin.com/" target="_blank"
-      aria-label="icône linkedin" ><em class="fa-brands fa-linkedin fa-5x"></em
+      <a
+        href="https://www.linkedin.com/"
+        target="_blank"
+        aria-label="icône linkedin"
+        ><em class="fa-brands fa-linkedin fa-5x"></em
       ></a>
     </footer>
     <div id="arrow-up">
-      <a href="#" aria-label="flèche top"><em class="fa-sharp fa-solid fa-arrow-up fa-3x"></em></a>
+      <a href="#" aria-label="flèche top"
+        ><em class="fa-sharp fa-solid fa-arrow-up fa-3x"></em
+      ></a>
     </div>
     <script src="js/script.js"></script>
   </body>

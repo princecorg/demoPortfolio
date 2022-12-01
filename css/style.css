@@ -14,13 +14,7 @@ table {
   background: #483d8b;
   border: 2px solid white;
 }
-/* td:first-child{
-  width: 30%;
-}
 
-td:last-child{
-  width: 70%;
-} */
 td {
   width: 50%;
   padding: 5px;
@@ -42,12 +36,18 @@ input {
   height: 3em;
 }
 
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
 input[type="button"] {
   width: 250px;
   margin: auto;
   color: white;
   border: 2px solid white;
-  background: green;
+  background: #185d36;
   border-radius: 5px;
   padding: 10px;
 }
@@ -237,7 +237,7 @@ img {
   transform-style: preserve-3d;
 }
 
-/* Rotation vedrticale au hover */
+/* Rotation verticale au hover */
 .flip-box:hover .flip-box-inner {
   transform: rotateX(180deg);
 }
