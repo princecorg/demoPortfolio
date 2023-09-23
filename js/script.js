@@ -1,12 +1,19 @@
-/* Ajout ou suppression de la classe "responsive" au clic */
-function toogleResponsive() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+/* Ajout ou suppression de la classe "responsive" au clic sur l'icône */
+
+let menu = document.querySelector(".icon");
+let switcher = true;
+
+menu.addEventListener("click", () => {
+  if (switcher) {
+    menu.parentElement.classList.add("responsive");
+    menu.innerHTML = '<em class="fa-solid fa-xmark"></em>';
+    switcher = false;
   } else {
-    x.className = "topnav";
+    menu.parentElement.classList.remove("responsive");
+    menu.innerHTML = '<em class="fa fa-bars"></em>';
+    switcher = true;
   }
-}
+});
 
 /* Gestion  du diaporama */
 
