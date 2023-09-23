@@ -22,6 +22,7 @@
     <script defer src="js/script.js"></script>
     <title>Portfolio</title>
   </head>
+
   <body>
     <header>
       <nav id="myTopnav" class="topnav">
@@ -57,8 +58,12 @@
         </div>
 
         <!-- flèches de navigation  -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" aria-label="Image suivante" onclick="plusSlides(-1)"
+          ><em class="fa-solid fa-chevron-left"></em
+        ></a>
+        <a class="next" aria-label="Image précédente" onclick="plusSlides(1)"
+          ><em class="fa-solid fa-chevron-right"></em
+        ></a>
 
         <!-- les points de navigation -->
         <div style="text-align: center">
@@ -196,10 +201,12 @@
                   type="checkbox"
                   id="rgpd"
                   name="rgpd"
-                  value="consentement RGPD"
+                  aria-checked="false"
                 />
-                En cochant cette case, je reconnais avoir pris connaissance de
-                la politique de confidentialité du site.
+                <label for="rgpd">
+                  En cochant cette case, je reconnais avoir pris connaissance de
+                  la politique de confidentialité du site.</label
+                >
               </td>
             </tr>
             <tr>
