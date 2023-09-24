@@ -63,3 +63,20 @@ function controleForm() {
     submit();
   }
 }
+
+// Gestion du footer au scroll (masquage progressif)
+
+const footer = document.querySelector('footer');
+console.log(footer)
+let prevPosition = window.scrollY;
+
+window.onscroll = e => {
+  const diff = window.scrollY - prevPosition;
+  prevPosition = window.scrollY;
+  
+  if (diff > 0) {//scroll vers le bas
+    footer.classList.add("hidden")
+  } else {//scroll vers le haut
+    footer.classList.remove("hidden")
+  }
+}

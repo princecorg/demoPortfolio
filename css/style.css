@@ -2,7 +2,11 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 table {
@@ -36,13 +40,13 @@ input {
   height: 3em;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
 
-input[type="button"] {
+input[type='button'] {
   width: 250px;
   margin: auto;
   color: white;
@@ -52,7 +56,7 @@ input[type="button"] {
   padding: 10px;
 }
 
-input[type="button"]:hover {
+input[type='button']:hover {
   cursor: pointer;
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
@@ -100,14 +104,12 @@ input[type="button"]:hover {
 
 /* ______________________________ Sections ________________________________*/
 
-section,
-footer {
+section {
   min-height: 200px;
   padding: 20px 0;
 }
 
-#edito,
-footer {
+#edito {
   background-color: #483d8b;
 }
 
@@ -269,6 +271,19 @@ img {
 
 footer {
   text-align: center;
+  background: black;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  padding: 20px 0;
+  transition: height 1s;
+}
+
+.hidden {
+  height: 0 !important;
 }
 
 .fa-brands {
@@ -366,18 +381,42 @@ footer {
 
 #arrow-up {
   display: block;
+  z-index: 1;
   background: rgba(160, 180, 219, 0.8);
-  width: 50px;
-  height: 66px;
-  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 17px 38px 40px -17px rgba(0, 0, 0, 0.29);
   text-align: center;
-  padding-top: 8px;
+  padding-top: 10px;
   position: sticky;
-  left: 95%;
+  left: 94%;
   bottom: 20px;
 }
 
-#arrow-up i {
+#arrow-up::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 4px solid rgba(160, 180, 219, 0.8);
+  transform-origin: center;
+  transform: scale(1);
+}
+
+#arrow-up:hover::before {
+  transition: all 0.75s ease-in-out;
+  transform-origin: center;
+  transform: scale(1.75);
+  opacity: 0;
+}
+
+#arrow-up em {
   color: white;
 }
 
