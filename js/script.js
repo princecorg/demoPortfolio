@@ -1,3 +1,6 @@
+/* _____________________________ Menu Burger ________________________________*/
+
+
 /* Ajout ou suppression de la classe "responsive" au clic sur l'icône */
 
 let menu = document.querySelector(".icon");
@@ -15,17 +18,33 @@ menu.addEventListener("click", () => {
   }
 });
 
-/* Gestion  du diaporama */
+/* _____________________________ Diaporama ________\\________________________*/
 
+// variables
+
+let arrowL = document.getElementById('prev')
+let arrowR = document.getElementById('next')
+let dots = document.querySelectorAll(".dot");
 let slideIndex = 1;
+
+// Mise en place des écouteurs et appels de fonctions
+
+arrowL.addEventListener('click', () => plusSlides(-1)); 
+arrowR.addEventListener('click', () => plusSlides(1));
+
+dots.forEach(function(dot, index) {
+  dot.addEventListener('click', () => currentSlide(index+1))
+  });
+
+
 showSlides(slideIndex);
 
-// Next/previous controls
+// Contrôles via les chevrons Next/previous
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
+// Contrôles via les Thumbnail image
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
@@ -33,7 +52,6 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -49,6 +67,8 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+/* _____________________________ Formulaire _________________________________*/
 
 function controleForm() {
   if (document.getElementById("rgpd").checked === false) {
@@ -67,7 +87,6 @@ function controleForm() {
 // Gestion du footer au scroll (masquage progressif)
 
 const footer = document.querySelector('footer');
-console.log(footer)
 let prevPosition = window.scrollY;
 
 window.onscroll = e => {

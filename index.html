@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Petit portfolio visant l'acquisition des bases de HTML et CSS." />
+    <meta
+      name="description"
+      content="Petit portfolio visant l'acquisition des bases de HTML et CSS."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/0acb75a9e8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0acb75a9e8.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
     <title>Portfolio</title>
@@ -34,33 +43,33 @@
       <section id="edito" class="slideshow-container">
         <!-- Le diaporama -->
         <div class="mySlides fade">
-          <img src="images/img1.jpg" alt="image 1 du diaporma" />
+          <div id="slide1"></div>
           <div class="text">légende de l'image 1</div>
         </div>
 
         <div class="mySlides fade">
-          <img src="images/img2.jpg" alt="image 2 du diaporma" />
+          <div id="slide2"></div>
           <div class="text">légende de l'image 2</div>
         </div>
 
         <div class="mySlides fade">
-          <img src="images/img3.jpg" alt="image 3 du diaporma" />
+          <div id="slide3"></div>
           <div class="text">légende de l'image 3</div>
         </div>
 
         <!-- flèches de navigation  -->
-        <a class="prev" aria-label="Image suivante" onclick="plusSlides(-1)"
+        <a id="prev" aria-label="Image suivante" 
           ><em class="fa-solid fa-chevron-left"></em
         ></a>
-        <a class="next" aria-label="Image précédente" onclick="plusSlides(1)"
+        <a id="next" aria-label="Image précédente"
           ><em class="fa-solid fa-chevron-right"></em
         ></a>
 
         <!-- les points de navigation -->
         <div style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </section>
       <section id="projets">
@@ -188,11 +197,7 @@
             </tr>
             <tr>
               <td id="gdpr" colspan="2">
-                <input
-                  type="checkbox"
-                  id="rgpd"
-                  name="rgpd"                  
-                />
+                <input type="checkbox" id="rgpd" name="rgpd" />
                 <label for="rgpd">
                   En cochant cette case, je reconnais avoir pris connaissance de
                   la politique de confidentialité du site.</label
