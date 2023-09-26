@@ -291,6 +291,10 @@ section {
 form input {
   text-indent: 5px;
 }
+
+.erreur{
+  color: red;
+}
 /*_______________________________ Footer __________________________________*/
 
 footer {

@@ -139,7 +139,7 @@
         <form action="traitement.php" method="post">
           <table>
             <tr>
-              <td><label for="firstname">Prénom :</label></td>
+              <td><label for="firstname">Prénom * :</label></td>
               <td>
                 <input
                   type="text"
@@ -150,7 +150,7 @@
               </td>
             </tr>
             <tr>
-              <td><label for="lastname">Nom :</label></td>
+              <td><label for="lastname">Nom * :</label></td>
               <td>
                 <input
                   type="text"
@@ -161,7 +161,7 @@
               </td>
             </tr>
             <tr>
-              <td><label for="email">Adresse mail :</label></td>
+              <td><label for="email">Adresse mail * :</label></td>
               <td>
                 <input
                   type="email"
@@ -172,7 +172,7 @@
               </td>
             </tr>
             <tr>
-              <td><label for="objet">Objet du message :</label></td>
+              <td><label for="objet">Objet du message * :</label></td>
               <td>
                 <input
                   type="text"
@@ -183,7 +183,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="2"><label for="message">Votre message :</label></td>
+              <td colspan="2"><label for="message">Votre message * :</label></td>
             </tr>
             <tr>
               <td colspan="2">
@@ -206,7 +206,12 @@
             </tr>
             <tr>
               <td colspan="2">
-                <input type="button" onclick="controleForm()" value="Envoyer" />
+                <input type="button" id="btnForm" value="Envoyer" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div id="indication"></div>
               </td>
             </tr>
           </table>
