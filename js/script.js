@@ -67,15 +67,15 @@ function showSlides (n) {
 }
 
 /* _____________________________ Formulaire _________________________________*/
-
-btnFormulaire = document.getElementById("btnForm")
+const monFormulaire = document.getElementById("monFormulaire")
+const btnFormulaire = document.getElementById("btnForm")
 btnFormulaire.addEventListener('click', function (e) {
   e.preventDefault()
 
   try {
     if (validerFormulaire()) {
       indication.textContent = 'Votre formulaire a été envoyé'
-      //soumission du formulaire
+      // monFormulaire.submit()  //soumission du formulaire
     }
   } catch (erreur) {
     indication.textContent = `${erreur.message}`
