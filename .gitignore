@@ -1,4 +1,4 @@
-.eslintrc.js
 node_modules/
-paxkage-lock.json
-
+.eslintignore
+.eslintrc.js
+package-lock.json
