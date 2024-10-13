@@ -17,3 +17,4 @@ Rendu type du projet du module Programmation Web pour le cours MSBD2IN07 (EPF).
 :rotating_light: Le code passera la validation W3C pour le HTML et le CSS.  
 :rotating_light: Le code respectera la norme WCAG 2.0 AA.  
 :rotating_light: Le code devra être disponible sur un repository public sur GitHub.  
+
