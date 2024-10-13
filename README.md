@@ -11,7 +11,7 @@ Rendu type du projet du module Programmation Web pour le cours MSBD2IN07 (EPF).
 
 ## Visualisation
 
-Vous pouvez visualiser le rendu ici : [DemoPortfolio](https://princecorg.github.io/demoPortfolio/)
+:memo: Vous pouvez visualiser le rendu ici : [DemoPortfolio](https://princecorg.github.io/demoPortfolio/)
 
 ## Contraintes :
 :rotating_light: Le code passera la validation W3C pour le HTML et le CSS.  
